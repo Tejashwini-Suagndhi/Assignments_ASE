@@ -74,7 +74,7 @@
         const closePopup = document.getElementById('close-popup');
 
         submitButton.addEventListener('click', function () {
-            // Validation logic
+        
             if (form.checkValidity()) {
                 const firstName = document.getElementById('first-name').value;
                 const lastName = document.getElementById('last-name').value;
@@ -85,7 +85,7 @@
                 const email = document.getElementById('email').value;
                 const mobile = document.getElementById('mobile').value;
 
-                // Display the results in the popup
+         
                 popupContent.innerHTML = `
                     <p><strong>First Name:</strong> ${firstName}</p>
                     <p><strong>Last Name:</strong> ${lastName}</p>
@@ -98,7 +98,6 @@
                 `;
                 popup.style.display = 'block';
 
-                // Reset the form
                 form.reset();
             } else {
                 alert('Please fill out all required fields.');
